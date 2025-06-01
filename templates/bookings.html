@@ -1,0 +1,6 @@
+<h2>My Bookings</h2>
+<ul>
+  {% for b in bookings %}
+    <li>{{ b.date }}: {{ b.from }} → {{ b.to }} on {{ b.bus }}</li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,6 @@
+<h2>Available Routes</h2>
+<ul>
+  {% for r in routes %}
+    <li>{{ r.from }} → {{ r.to }} ({{ r.bus }}, {{ r.departure }} - {{ r.arrival }})</li>
+  {% endfor %}
+</ul>
